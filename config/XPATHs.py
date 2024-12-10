@@ -36,3 +36,7 @@ job_title_dropdown_options_xpath = '//div[@role="listbox" and @class="oxd-select
 hr_manager_dropdown_xpath = '//div[@role="option"]/span[text()="HR Manager"]'
 
 hiring_manager_xpath = '//label[text()="Hiring Manager"]/parent::div/following-sibling::div//input'
+
+buzz_newsfeed_xpath = "//a[text()='Buzz Newsfeed']"
+buzz_first_post_date = "//div[@class='oxd-grid-1 orangehrm-buzz-newsfeed-posts']/div[1]//p[@class='oxd-text oxd-text--p orangehrm-buzz-post-time']"
+buzz_post_content = "//div[@class='oxd-grid-1 orangehrm-buzz-newsfeed-posts']/div[1]//p[@class='oxd-text oxd-text--p orangehrm-buzz-post-body-text']"

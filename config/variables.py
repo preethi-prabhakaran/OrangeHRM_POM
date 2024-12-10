@@ -13,3 +13,5 @@ empFirstName = "Asha"
 empLastName = "Natty"
 empFullName = "Asha Natty"
 empMiddleName = "Anjali"
+
+buzz_post_msg = "Good Morning, have a nice day!"

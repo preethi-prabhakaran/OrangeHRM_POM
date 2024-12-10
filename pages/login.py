@@ -25,6 +25,4 @@ class LoginPage:
 
         assert "Dashboard" in driver.page_source, "Login failed"
 
-        print("Testing -- To be removed")
-
         return driver
