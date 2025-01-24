@@ -1,13 +1,15 @@
 url = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
 username = "Admin"
 password = "admin123"
+
 firstName = "Pratheek"
 lastName = "Nair"
 fullName = "Pratheek Nair"
-vacancyName = "JR001-HR-Lead"
-vacancyJobTitle = "HR Manager"
-hiringManagerFirstName = "Mark"
 candidate_email = "pratheek.nair@gmail.com"
+
+vacancyName = "JR001-HR-Lead"
+vacancyJobTitle = "HR-Manager"
+hiringManagerFirstName = "a"
 
 empFirstName = "Asha"
 empLastName = "Natty"

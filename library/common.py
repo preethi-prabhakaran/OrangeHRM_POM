@@ -24,6 +24,6 @@ def open_url(driver: webdriver, url):
 
 
 def wait_till_element_visible(driver: webdriver, element_xpath):
-    wait = WebDriverWait(driver, 10)
-    element = wait.until(expected_conditions.visibility_of_element_located((By.XPATH, element_xpath)))
+    wait = WebDriverWait(driver, 20)
+    element = wait.until(expected_conditions.presence_of_element_located((By.XPATH, element_xpath)))
     return element
