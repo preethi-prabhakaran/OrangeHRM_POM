@@ -1,5 +1,6 @@
 import unittest
-import Buzz, PIM, Recruitment
+from tests import Buzz, PIM, Recruitment
+
 
 if __name__ == '__main__':
 
