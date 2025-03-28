@@ -13,8 +13,10 @@ if __name__ == '__main__':
         return all_tests
 
     # initialize a runner, pass it to your suite and run it
-    runner = unittest.TextTestRunner(verbosity=3)
-    runner.run(suites())
+    # output the test results to an xml file
+    with open('test_run_result.xml', 'w') as results:
+        runner = unittest.TextTestRunner(results, verbosity=3)
+        runner.run(suites())
 
 
 
