@@ -1,3 +1,4 @@
+import os
 import unittest
 
 import xmlrunner
@@ -15,11 +16,15 @@ if __name__ == '__main__':
         all_tests = unittest.TestSuite([suite_pim, suite_recruitment, suite_buzz])
         return all_tests
 
+
+    # create a directory for storing results
+    os.makedirs(os.path.join(os.getcwd(), "test_results"), exist_ok=True)
+
     # initialize a runner XMLRunner to get output as xml, pass it to your suite and run it
     # output the test results to an xml file
-    with open('test_results/test_run_result.xml', 'w') as results:
-        runner = xmlrunner.XMLTestRunner(results, verbosity=3)
-        runner.run(suites())
+    runner = xmlrunner.XMLTestRunner(output="test_results", verbosity=3)
+    runner.run(suites())
+
 
 
 
